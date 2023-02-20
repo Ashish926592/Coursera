@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+</head>
+<style>
+  @media (max-width: 1365px) {
+    #two span {
+      display: none;
+    }
+  }
+  @media(max-width:1000px){
+    #search{
+        display: block !important;
+    }
+    #middle1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    #rightbar{
+        display: flex;
+        justify-content: center !important;
+    }
+    #middle3{
+        display: flex;
+        justify-content: center !important;
+        justify-content: space-between;
+    }
+    #middle4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    #middle5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    
+  
+    
+}
+
+  #icon1 img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    justify-content: center;
+  }
+
+  #icon1 {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #icon2 div img {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    justify-content: center;
+  }
+  #footor1 div ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+  }
+  
+  #image2 div img{
+    height:100px;
+    width: 100px;
+
+  }
+</style>
+
+<body>
+  <div class="row" class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light container-fluid">
+      <div class="container-fluid">
+        <button id="" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent1" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="justify-content-center"
+          src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo-500x281.png" height="100px" alt="" />
+        <em class="bi bi-search d-none" id="search"></em>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Explore
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <input class="form-control ms-4 border border-dark pe-3" type="search" placeholder="Search"
+                  aria-label="Search" />
+                <button class="btn btn-primary" type="submit">
+                  <em class="bi bi-search"></em>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent1">
+          <ul class="navbar-nav" id="two">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span>Online</span> Degrees
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><span>Find your new</span>career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>For</span>Enterprice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>For</span>Universities</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">LogIn</a>
+            </li>
+
+            <li>
+              <button type="button" class="btn btn-primary text-white">
+                Join<span> for Free</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="middle1" class="d-flex justify-content-center container-fluid">
+      <div id="leftbar" class="col-6-center mt-5">
+        <h1 style="font-size:5rem;">Learn Without <div>Limits</div>
+        </h1>
+        <p>
+        <div style="font-size: 1.5rem;">Start, switch, or advance your career with more than 5,000 courses,</div>
+        <div style="font-size: 1.5rem;">Professional Certificates, and degrees from world-class universities</div>
+        <div style="font-size: 1.5rem;">and companies.</div>
+        </p>
+
+        <button type="button" class="btn btn-primary btn-lg">
+          Join for Free
+        </button>
+        <button type="button" class="text-primary border border-primary btn btn-lg">
+          Try Coursera for Business
+        </button>
+      </div>
+
+      <div class="col-6 d-flex justify-content-center" id="rightbar">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/33EmCuyKJT5MD5DOiYCcCV/c4e335120bb5d1df52add54e9ade10ac/CourseraLearners_C_Composition_Lochan.png?auto=format%2Ccompress&dpr=1&w=459&h=497&q=40https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/33EmCuyKJT5MD5DOiYCcCV/c4e335120bb5d1df52add54e9ade10ac/CourseraLearners_C_Composition_Lochan.png?auto=format%2Ccompress&dpr=1&w=459&h=497&q=40"
+          alt="">
+      </div>
+    </section>
+
+    <section id="middle2" class="bg-secondary bg-opacity-25 container-fluid">
+      <div class="d-flex justify-content-center">
+        <h2 style="margin-top: 35px;">We Collaborate with <a href="275+learning universities and companies">275+learning
+            universities and companies</a></h2>
+      </div>
+      <div class="d-flex justify-content-center image-fluid" id="icon1">
+        <img src="https://www.seekpng.com/png/full/249-2490318_bombay-indian-institute-of-technology-bombay-logo.png"
+          alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_Institute_of_Technology_Roorkee_logo.png"
+          alt="">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/IIM_Calcutta_Logo.svg/220px-IIM_Calcutta_Logo.svg.png"
+          alt="">
+        <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="">
+        <img src="https://www.isb.edu/content/dam/sites/isb/about-isb/ISB_transparent_logo.png" alt="">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Stanford_wordmark_%282012%29.svg/1280px-Stanford_wordmark_%282012%29.svg.png"
+          alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" alt="">
+        <img src="https://brand.umich.edu/assets/brand/style-guide/logo-guidelines/U-M_Logo-Hex.png" alt="">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png"
+          alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png"
+          alt="">
+      </div>
+    </section>
+
+    <section>
+      <h3 style="color: darkslateblue;">Master's and Bachelor's Degrees</h3>
+      <p class="fs-1">Find a top degree that fits your life</p>
+      <h3>Breakthrough pricing on 100% online degrees from top universities.</h3>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active d-flex justify-content-between">
+            <img src="https://imgbox.io/ib/t3600KdGxA.png" alt="t3600KdGxA" />
+            <img src="https://imgbox.io/ib/gEWmqncrto.png" alt="gEWmqncrto" />
+            <img src="https://imgbox.io/ib/tDdmOPDsS6.png" alt="tDdmOPDsS6" />
+            <img src="https://imgbox.io/ib/BYrT1kfBk5.png" alt="BYrT1kfBk5" />
+
+
+          </div>
+
+          <div class="carousel-item d-flex justify-content-between">
+            <img src="https://imgbox.io/ib/qlxXBVstdr.png" alt="qlxXBVstdr" />
+            <img src="https://imgbox.io/ib/gEWmqncrto.png" alt="gEWmqncrto" />
+            <img src="https://imgbox.io/ib/4PpiwykDkm.png" alt="4PpiwykDkm" />
+            <img src="https://imgbox.io/ib/H5VAxmY5ZZ.png" alt="H5VAxmY5ZZ" />
+
+          </div>
+
+          <div class="carousel-item d-flex justify-content-between">
+            <img src="https://imgbox.io/ib/5W1oxvjE0b.png" alt="5W1oxvjE0b" />
+            <img src="https://imgbox.io/ib/Sne25nRlwq.png" alt="Sne25nRlwq" />
+            <img src="https://imgbox.io/ib/LiJAloneQL.png" alt="LiJAloneQL" />
+            <img src="https://imgbox.io/ib/J7PZMiP8W1.png" alt="J7PZMiP8W1" />
+
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+   
+    <div class="row container-fluid" id="middle3">
+  
+        <div class="col-lg-3 col-md-4  col-sm-6 card">
+          <div class="row g-0">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="card-body">
+                <p class="card-text-dark">Data Science</p>
+                <p class="card-text-gray"><small class="text-muted">425 courses</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4  col-sm-6 card" >
+          <div class="row g-0">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img
+                src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="card-body">
+                <p class="card-text-dark">Business</p>
+                <p class="card-text-gray"><small class="text-muted">1095 courses</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-4  col-sm-6 card" >
+          <div class="row g-0">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img
+                src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="card-body">
+                <p class="card-text-dark">Computer</p>
+                <p class="card-text-gray"><small class="text-muted">668 courses</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-lg-3 col-md-4  col-sm-6 card" >
+          <div class="row g-0">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="card-body">
+                <p class="card-text-dark">Health</p>
+                <p class="card-text-gray"><small class="text-muted">471 courses</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-3 col-md-4  col-sm-6 card">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img
+              src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-body">
+              <p class="card-text-dark">Social</p>
+              <p class="card-text-gray"><small class="text-muted">401 courses</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4  col-sm-6 card">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-body">
+              <span class="card-text-dark">Personal</span>
+              <p class="card-text-gray"><small class="text-muted">137 courses</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4  col-sm-6 card">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-body">
+              <p class="card-text-dark">Arts</p>
+              <p class="card-text-gray"><small class="text-muted">338 courses</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4  col-sm-6 card">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img
+              src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-body">
+              <p class="card-text-dark">Physical</p>
+              <p class="card-text-gray"><small class="text-muted">413 courses</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4  col-sm-6 card">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-body">
+              <p class="card-text-dark">Information</p>
+              <p class="card-text-gray"><small class="text-muted">145 courses</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4  col-sm-6 card">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-body">
+              <p class="card-text-dark">Math and Logic</p>
+              <p class="card-text-gray"><small class="text-muted">70 courses</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="row bg-light mt-5" id="middle4">
+      <div class="col-lg-5 col-md-12" id="left">
+        <div class="d-flex justify-content-center">
+          <h2 class="color: darkslateblue;">Coursera for Business</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p> Get world-class training and development programs developed by top universities and companies. All on
+            Coursera for Business.</p>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button type="button" class="text-primary border border-primary btn btn-md">
+            Coursera for Enterprice
+          </button>
+          <button type="button" class="text-primary border border-primary btn btn-md">
+            Coursera for Teams
+          </button>
+        </div>
+
+      </div>
+
+      <div class="col-lg-7 col-md-12" id="icon2">
+        <div class="d-flex justify-content-center">
+          <h5 style="color: darkslateblue;">Thousands of institutions use Coursera’s</h5>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h5 style="color: darkslateblue;"> enterprise offering.</h5>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+          <img
+            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/2SUxbvCqY1DfFP6aprn1DW/0ff43fdadfb3d8ef2ab606a33da9c060/logo-mindtree-color.png?auto=format%2Ccompress&dpr=1&w=90&h=30&q=40"
+            alt="">
+          <img
+            src="https://images.ctfassets.net/wp1lcwdav1p1/2gSh2ySvHF7nLxtb9dlQEt/764bae06b9276de25caa4ed11bf14000/tata.svg"
+            alt="">
+          <img
+            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3YzQz3Vh4YTiGqLELGNyu9/722d2f138687a1cef279e637f71e7ead/logo-reliance-industries-color.png?auto=format%2Ccompress&dpr=1&w=90&h=30&q=40"
+            alt="">
+          <img
+            src="https://images.ctfassets.net/wp1lcwdav1p1/41QtOC7ZCIBCQa7hslWPne/265786c423394ff4b8ccc0717355593e/axisbank.svg"
+            alt="">
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <img
+            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6EliaRChToTNA8VBDbD0vj/0cd6751a3fde4dca165c40eadfdb1bc0/logo-generalelectric-color.png?auto=format%2Ccompress&dpr=1&w=90&h=30&q=40"
+            alt="">
+          <img
+            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/R60gBTM79KUHbqnvpypJL/bfba4ab09adbf049303409b97d996176/logo-mahindra-color.png?auto=format%2Ccompress&dpr=1&w=90&h=30&q=40"
+            alt="">
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+    </section>
+
+    
+    <section id="middle5" class="d-flex container-fluid mt-5">
+      <div class="col-lg-6 col-md-12 d-flex justify-content-center" id="middle5_image">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-rebrand/secondary-consumer-cta/Image-Next-Step.png?auto=format%2Ccompress&dpr=1&w=471&h=330&q=40"
+          alt="">
+
+      </div>
+
+      <div id="middle5_content" class="col-lg-6 col-md-12">
+        <div class="d-flex justify-content-center">
+          <h2>Take the next step toward your personal and professional goals with Coursera.</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p>
+            Join now to receive personalized recommendations from the full Coursera catalog.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary btn-md">
+            Join for Free
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="row bg-secondary bg-opacity-25 d-flex justify-content-center container-fluid mt-5" id="footor1">
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3> Start or advance your career</h3>
+          <li><a href="">Google Data Analyst</a> </li>
+          <li><a href="">Google Digital Marketing & E-commerce Professional Certificate</a> </li>
+          <li><a href="">Google IT Automation with Python Professional Certificate</a></li>
+          <li><a href="">oogle IT Support</a></li>
+          <li><a href="">Google UX Design</a></li>
+          <li><a href=""> Preparing for Google Cloud Certification: Cloud Architect</a></li>
+          <li><a href=""> IBM Cybersecurity Analyst</a></li>
+          <li><a href="">  IBM Data Analyst</a></li>
+          <li><a href=""> IBM Data Engineering</a></li>
+          <li><a href=""> IBM Data Science</a></li>
+          <li><a href="">IBM Full Stack Cloud Developer</a></li>
+          <li><a href=""> IBM Machine Learning</a></li>
+          <li><a href="">Intuit Bookkeeping</a></li>
+          <li><a href=""> Meta Front-End Developer</a></li>
+          <li><a href=""> DeepLearning.AI TensorFlow Developer Professional Certificate</a></li>
+          <li><a href="">  SAS Programmer Professional Certificate</a></li>
+          <li><a href=""> Launch your career</a></li>
+          <li><a href=""> Prepare for a certification</a></li>
+          <li><a href="">Advance your career</a></li>
+          <li><a href=""> How to Identify Python Syntax Error</a></li>
+          <li><a href=""> How to Catch Python Exceptions</a></li>
+          <li><a href="">See all Programming Tutorials</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3> Popular Courses and certification</h3>
+          <li><a href="">Google Data Analyst</a> </li>
+          <li><a href="">Google Digital Marketing & E-commerce Professional Certificate</a> </li>
+          <li><a href="">Google IT Automation with Python Professional Certificate</a></li>
+          <li><a href="">oogle IT Support</a></li>
+          <li><a href="">Google UX Design</a></li>
+          <li><a href=""> Preparing for Google Cloud Certification: Cloud Architect</a></li>
+          <li><a href=""> IBM Cybersecurity Analyst</a></li>
+          <li><a href="">  IBM Data Analyst</a></li>
+          <li><a href=""> IBM Data Engineering</a></li>
+          <li><a href=""> IBM Data Science</a></li>
+          <li><a href="">IBM Full Stack Cloud Developer</a></li>
+          <li><a href=""> IBM Machine Learning</a></li>
+          <li><a href="">Intuit Bookkeeping</a></li>
+          <li><a href=""> Meta Front-End Developer</a></li>
+          <li><a href=""> DeepLearning.AI TensorFlow Developer Professional Certificate</a></li>
+          <li><a href="">  SAS Programmer Professional Certificate</a></li>
+          <li><a href=""> Launch your career</a></li>
+          <li><a href=""> Prepare for a certification</a></li>
+          <li><a href="">Advance your career</a></li>
+          <li><a href=""> How to Identify Python Syntax Error</a></li>
+          <li><a href=""> How to Catch Python Exceptions</a></li>
+          <li><a href="">See all Programming Tutorials</a></li>
+        </ul>
+      </div>
+
+       <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3>Popular collections and articles</h3>
+          <li><a href="">Google Data Analyst</a> </li>
+          <li><a href="">Google Digital Marketing & E-commerce Professional Certificate</a> </li>
+          <li><a href="">Google IT Automation with Python Professional Certificate</a></li>
+          <li><a href="">oogle IT Support</a></li>
+          <li><a href="">Google UX Design</a></li>
+          <li><a href=""> Preparing for Google Cloud Certification: Cloud Architect</a></li>
+          <li><a href=""></a></li>
+          <li><a href=""> IBM Cybersecurity Analyst</a></li>
+          <li><a href="">  IBM Data Analyst</a></li>
+          <li><a href=""> IBM Data Engineering</a></li>
+          <li><a href=""> IBM Data Science</a></li>
+          <li><a href="">IBM Full Stack Cloud Developer</a></li>
+          <li><a href=""> IBM Machine Learning</a></li>
+          <li><a href="">Intuit Bookkeeping</a></li>
+          <li><a href=""> Meta Front-End Developer</a></li>
+          <li><a href=""> DeepLearning.AI TensorFlow Developer Professional Certificate</a></li>
+          <li><a href="">  SAS Programmer Professional Certificate</a></li>
+          <li><a href=""> Launch your career</a></li>
+          <li><a href=""> Prepare for a certification</a></li>
+          <li><a href="">Advance your career</a></li>
+          <li><a href=""> How to Identify Python Syntax Error</a></li>
+          <li><a href=""> How to Catch Python Exceptions</a></li>
+          <li><a href="">See all Programming Tutorials</a></li>
+        </ul>
+      </div> 
+
+  
+
+    
+
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3>Earn a degree or certificate online</h3>
+          <li><a href="">Google Data Analyst</a> </li>
+          <li><a href="">Google Digital Marketing & E-commerce Professional Certificate</a> </li>
+          <li><a href="">Google IT Automation with Python Professional Certificate</a></li>
+          <li><a href="">oogle IT Support</a></li>
+          <li><a href="">Google UX Design</a></li>
+          <li><a href=""> Preparing for Google Cloud Certification: Cloud Architect</a></li>
+          <li><a href=""> IBM Cybersecurity Analyst</a></li>
+          <li><a href="">  IBM Data Analyst</a></li>
+          <li><a href=""> IBM Data Engineering</a></li>
+          <li><a href=""> IBM Data Science</a></li>
+          <li><a href="">IBM Full Stack Cloud Developer</a></li>
+          <li><a href=""> IBM Machine Learning</a></li>
+          <li><a href="">Intuit Bookkeeping</a></li>
+          <li><a href=""> Meta Front-End Developer</a></li>
+          <li><a href=""> DeepLearning.AI TensorFlow Developer Professional Certificate</a></li>
+          <li><a href="">  SAS Programmer Professional Certificate</a></li>
+          <li><a href=""> Launch your career</a></li>
+          <li><a href=""> Prepare for a certification</a></li>
+          <li><a href="">Advance your career</a></li>
+          <li><a href=""> How to Identify Python Syntax Error</a></li>
+          <li><a href=""> How to Catch Python Exceptions</a></li>
+          <li><a href="">See all Programming Tutorials</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3>Coursera</h3>
+          <li><a href="">Google Data Analyst</a> </li>
+          <li><a href="">Google Digital Marketing & E-commerce Professional Certificate</a> </li>
+          <li><a href="">Google IT Automation with Python Professional Certificate</a></li>
+          <li><a href="">oogle IT Support</a></li>
+          <li><a href="">Google UX Design</a></li>
+          <li><a href=""> Preparing for Google Cloud Certification: Cloud Architect</a></li>
+          <li><a href=""> IBM Cybersecurity Analyst</a></li>
+          <li><a href="">  IBM Data Analyst</a></li>
+          <li><a href=""> IBM Data Engineering</a></li>
+          <li><a href=""> IBM Data Science</a></li>
+          <li><a href="">IBM Full Stack Cloud Developer</a></li>
+          <li><a href=""> IBM Machine Learning</a></li>
+          <li><a href="">Intuit Bookkeeping</a></li>
+          <li><a href=""> Meta Front-End Developer</a></li>
+          <li><a href=""> DeepLearning.AI TensorFlow Developer Professional Certificate</a></li>
+          <li><a href="">  SAS Programmer Professional Certificate</a></li>
+          <li><a href=""> Launch your career</a></li>
+          <li><a href=""> Prepare for a certification</a></li>
+          <li><a href="">Advance your career</a></li>
+          <li><a href=""> How to Identify Python Syntax Error</a></li>
+          <li><a href=""> How to Catch Python Exceptions</a></li>
+          <li><a href="">See all Programming Tutorials</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3>Community</h3>
+          <li><a href="">Lerners</a> </li>
+          <li><a href="">Partners</a> </li>
+          <li><a href="">Beta Testers</a></li>
+          <li><a href="">Translators</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Tech Blog</a></li>
+          <li><a href="">Teaching Center</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 d-flex justify-content-center">
+        <ul style="list-style-type: none">
+          <h3>More</h3>
+          <li><a href="">Press</a> </li>
+          <li><a href="">Investors</a> </li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Accessibility</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Articles</a></li>
+          <li><a href="">Directory</a></li>
+          <li><a href="">Affiliates</a></li>
+          <li><a href="">Modern Slavery</a></li>
+          <li><a href="">Statement</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 d-grid justify-content-center">
+       <div><p>Coronavirus</p></div>
+       <div><p>Response</p></div>
+       <br>
+       <br>
+       
+       <div><h4>Learn Anywhere</h4></div>
+
+       <div  class="image-fluid" id="image2">
+      <div><img src="https://www.depotop.nu/wp-content/uploads/2021/12/apple_store_logo.svg" alt=""></div> 
+      <div><img src="https://www.pngall.com/wp-content/uploads/10/Google-Play-Logo-PNG-Cutout.png" alt=""></div> 
+       <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Certified_B_Corporation_B_Corp_Logo_2022_Black_RGB.svg/410px-Certified_B_Corporation_B_Corp_Logo_2022_Black_RGB.svg.png" alt=""></div>    
+    </div>
+      </div>
+    </div>
+    <hr>
+
+    <footer class="d-flex justify-content-between">
+     <div> <p>© 2023 Coursera Inc. All rights reserved.</p></div>
+     <div>
+      <em  class="bi bi-facebook" style="font-size:30px;"></em>
+      <em class="bi bi-linkedin ms-3" style="font-size:30px;"></em>
+      <em class="bi bi-twitter ms-3" style="font-size:30px;"></em>
+      <em class="bi bi-youtube ms-3" style="font-size:30px;"></em>
+      <em class="bi bi-instagram ms-3" style="font-size:30px;"></em>
+   
+     </div>
+    </footer>
+  </div>
+</body>
+
+</html>
